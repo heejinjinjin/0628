@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--초기화하기-->
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            font-family: "Seqoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        a{text-decoration:none;}
+        img{border:0;}
+        li{list-style:none;}
+    </style>
+    <!--공통 구성하기-->
+    <style>
+        .container{
+            margin-left:auto;
+            margin-right:auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <!--헤더 구성하기-->
+    <style>
+        #main-header{
+            padding: 10px 5px;
+        }
+    
+        #main-header h1{
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+    
+        #main-hedaer ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    
+        #main-hedaer li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        #main-header li a{
+            color:#555;
+        }
+    
+        #main-header li.activate a{
+            color: black;
+            font-weight: 500;
+        }
+    
+        #main-header label{
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color:#222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        
+        #checkbox{
+            display: none;
+        }
+    
+        #checkbox + nav{
+            display: block;
+        }
+    
+        #checkbox:checked + nav{
+            display: none;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id = "main-header">
+        <header class = "container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>베스트셀러 도서</h1>
+            </div>
+            <input type="checkbox" id="checked" checked="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="#">Brand</a></li>
+                    <li class ="active"><a href="#">Network</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id ="main-content">
+        <article class="container">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates eius corrupti animi, ducimus odit natus fugit eaque optio! Fugit totam voluptate ipsa recusandae doloremque iure dolor dignissimos dolorem. Nobis, reiciendis?</p>
+        </article>
+    </div>
+    <div id ="sub-content">
+        <article class="container">
+            <h1>세이노의 가르침</h1>
+            <h2>라즈베리 파이와 아두이노로 움직임, 소리, 빛 출력하기</h2>
+            <img src="book1.jpg">
+            <p>재야의 명저 《세이노의 가르침》 2023년판 정식 출간!
+            순자산 천억 원대 자산가, 세이노의 ‘요즘 생각’을 만나다
+            
+            2000년부터 발표된 그의 주옥같은 글들. 독자들이 자발적으로 만든 제본서는 물론, 전자책과 앱까지 나왔던 《세이노의 가르침》이 드디어 전국 서점에서 독자들을 마주한다. 여러 판본을 모으고 저자의 확인을 거쳐 최근 생각을 추가로 수록하였다. 정식 출간본에만 추가로 수록된 글들은 목차와 본문에 별도 표시하였다.
+            더 많은 사람이 이 책을 보고 힘을 얻길 바라기에 인세도 안 받는 저자의 마음을 담아, 700쪽이 넘는 분량에도 7천 원 안팎에 책을 구매할 수 있도록 했다. 정식 출간 전자책 또한 무료로 선보인다.
+            *필명 ‘세이노(Say No)’는 당신이 믿고 있는 것들에 ‘No!’를 외치고 제대로 살아가라는 뜻이다. 세이노는 지난 20여 년간 여러 칼럼을 통해 인생 선배로서 부와 성공에 대한 지
+            </p>
+            <br>
+            <h1>메리골드 마음 세탁소</h1>
+            <h2>라즈베리 파이와 아두이노로 움직임, 소리, 빛 출력하기</h2>
+            <img src="book2.jpg">
+            <p>
+                우리는 가끔 시간을 되돌려 과거로 돌아가 후회됐던 일을 되돌리고 싶어한다. 그런데 과연 그 일을 지워버리는 게 현명한 선택일까? 
+                그리고 그 기억을 지웠을 때 지금의 내가 있을 수 있을까? 만약 그 기억만 없다면 앞으로 행복만 할 수 있을까? 『메리골드 마음 세탁소』는 한밤중 언덕 위에 생겨난, 
+                조금 수상하고도 신비로운 세탁소에서 벌어지는 일들을 그린 힐링 판타지 소설이다. 창백하게 하얀 얼굴에 젓가락처럼 마른 몸, 까맣고 구불구불 긴 머리의 미스테리한 여자는 세탁소를 찾아오는 누군가를 위해
+                매일같이 따뜻한 차를 끓인다. 차를 마신 이들은 어느 누구에게도 말하지 못했던 비밀스러운 이야기들을 자기도 모르게 그녀에게 털어놓는다. 
+                아픈 날의 기억을 얼룩 지우듯 모조리 깨끗이 지워달라고 부탁한 사람들은 과연 세탁소를 나서며 행복해질 수 있을까?            
+            </p>
+        </article>
+    </div>
+    <div id = "main-footer">
+        <footer class="container">
+            <div>Ⓒ1991-2017 Example. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
